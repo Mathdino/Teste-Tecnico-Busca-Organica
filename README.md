@@ -7,14 +7,6 @@ Este projeto foi desenvolvido como parte do processo seletivo para a Busca Orgâ
 ```
 ├── index.html              # Página principal
 ├── styles.css              # Estilos globais
-├── components/             # Componentes reutilizáveis
-│   ├── header.css          # Estilos do cabeçalho
-│   └── footer.css          # Estilos do rodapé
-├── pages/                  # Estilos específicos de páginas
-│   ├── home.css            # Estilos da página inicial
-│   ├── empresa.css         # Estilos da página empresa
-│   ├── servicos.css        # Estilos da página serviços
-│   └── contato.css         # Estilos da página contato
 └── img/                    # Diretório de imagens
     └── logo.png            # Logo da empresa
 ```

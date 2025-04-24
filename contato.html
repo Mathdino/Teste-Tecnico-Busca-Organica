@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Teste Busca Orgânica</title>
+  <title>Contato - Teste Busca Orgânica</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -23,9 +23,56 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="contact-main">
+    <div class="contact-container">
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome<span class="required">*</span></label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
 
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail<span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
 
+            <div class="form-group">
+              <label for="telefone">Telefone<span class="required">*</span></label>
+              <input type="tel" id="telefone" name="telefone" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Como podemos ajudar?<span class="required">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Entre em contato</h2>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Rua seu endereço - Cidade - BR</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>(11) 9999-9999</p>
+        </div>
+        <div class="info-item">
+          <i class="fab fa-whatsapp"></i>
+          <p>(11) 9999-9999</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>contato@contato.com.br</p>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-logo">
@@ -81,6 +128,11 @@
     </div>
 
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 
 </html>

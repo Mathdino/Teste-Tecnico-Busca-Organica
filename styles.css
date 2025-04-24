@@ -7,7 +7,9 @@
 body {
   margin:0;
   position: relative;
-  font-family: "Poppins", sans-serifoppins', sans-serif;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
   }
 
 html {
@@ -19,7 +21,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 100px;
+  padding: 25px 180px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -372,6 +374,8 @@ section {
   color: #313131;
   border: none;
 }
+
+/* Cards Section Styles - Index Page */
 .cards-section {
   background: linear-gradient(90deg, #ea337f, #ffc107);
   padding: 60px 20px 100px;
@@ -399,11 +403,6 @@ section {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 4px 4px 0 0 #00bfa6;
-}
-
-.card:hover.card a::after {
-  width: 100%;
-
 }
 
 .card img {
@@ -449,6 +448,97 @@ section {
   transform: translateX(-50%) scaleX(1);
 }
 
+/* Cards Section Styles - Empresa Page */
+.cards-section-empresa {
+  padding: 0;
+  background-color: #fff;
+  margin-top: -400px;
+}
+
+.cards-container-empresa {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.card-empresa {
+  flex: 1;
+  text-align: center;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-empresa::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #00e1e7;
+  transition: width 0.3s ease;
+}
+
+.card-empresa:hover {
+  transform: translateY(-10px);
+}
+
+.card-empresa:hover::after {
+  width: 100%;
+}
+
+.card-image-empresa {
+  margin-bottom: 25px;
+}
+
+.card-image-empresa img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-empresa:hover .card-image-empresa img {
+  transform: scale(1.05);
+}
+
+.card-empresa h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Responsive adjustments - Empresa Cards */
+@media (max-width: 992px) {
+  .cards-container-empresa {
+    flex-wrap: wrap;
+  }
+
+  .card-empresa {
+    flex: 0 0 calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container-empresa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-empresa {
+    width: 100%;
+    max-width: 350px;
+  }
+}
 
 .destaque {
   border: 5px solid #00e0c6;
@@ -656,11 +746,11 @@ section {
   text-transform: uppercase;
   font-size: 2rem;
   padding-top: 100px;
-  margin-left: 100px;
+  margin-left: 180px;
 }
 .empresa {
   margin-top: -330px !important; 
-  margin-left: -80px;
+  margin-left: 0;
 }
 .subtitulo-empresa{
   margin-left: 0px !important;
@@ -669,4 +759,197 @@ section {
 .card-servicos-img img{
   width: 200px;
   height: 200px;
+}
+
+/* Contact page specific styles */
+.contact-main {
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(135deg, #6b21a8 0%, #3b82f6 50%, #f97316 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-main::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: -10%;
+  width: 150%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.required {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #6b21a8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #581c87;
+}
+
+/* Contact Info Section */
+.contact-info {
+  color: white;
+  padding: 2rem;
+  flex-basis: 400px;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .nav-menu ul {
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-container {
+    padding: 2rem 1rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  animation: whatsapp-movement 2s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+  color: #FFF;
+  background-color: #128C7E;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+@keyframes whatsapp-movement {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }

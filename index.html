@@ -1,81 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Responsivo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Teste Busca Orgânica</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="/"><img src="./img/logo.png" alt="Logo da Busca Orgânica"></a>
+  <header class="header">
+    <div class="logo">
+      <a href="/"><img src="./img/logo.png" alt="Logo da Busca Orgânica"></a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/empresa.html">Empresa</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="/contato.html" class="btn-contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="subtitle">NÓS SOMOS A</p>
+          <h1><span>Sua</span>Empresa</h1>
+          <div class="hero-buttons">
+            <a href="#contato" class="btn-primary">SOLICITE UM ORÇAMENTO</a>
+            <a href="#servicos" class="btn-secondary">Serviços</a>
+          </div>
         </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#empresa">Empresa</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato" class="btn-contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="subtitle">NÓS SOMOS A</p>
-                    <h1><span>Sua</span>Empresa</h1>
-                    <div class="hero-buttons">
-                        <a href="#contato" class="btn-primary">SOLICITE UM ORÇAMENTO</a>
-                        <a href="#servicos" class="btn-secondary">Serviços</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Sobre-->
-        <section class="sobre">
-            <p class="subtitulo">LOREM IPSUM</p>
-            <h1 class="titulo">
-              Lorem ipsum dolor sit <br />
-              <span>& consectetur adipis elit</span>
-            </h1>
-            <p class="descricao">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            </p>
-            <a href="#" class="btn-sobre">SOBRE NÓS</a>
-          </section>
-          <!--Serviços-->
-          <section class="cards-section">
-            <div class="cards-container">
-              <div class="card destaque">
-                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Imagem 1" />
-                <h3>Title 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
-                <a href="#">Saiba Mais</a>
-              </div>
-              <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920063.png" alt="Imagem 2" />
-                <h3>Title 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
-                <a href="#">Saiba Mais</a>
-              </div>
-              <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="Imagem 3" />
-                <h3>Title 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
-                <a href="#">Saiba Mais</a>
-              </div>
-            </div>
-          
-            <div class="cta">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus mollitia quo</p>
-              <a href="#" class="btn-cta">ENTRE EM CONTATO</a>
-            </div>
-          </section>
-        
-    </main>
+      </div>
+    </section>
+    <!--Sobre-->
+    <section class="sobre">
+      <p class="subtitulo">LOREM IPSUM</p>
+      <h1 class="titulo">
+        Lorem ipsum dolor sit <br />
+        <span>& consectetur adipis elit</span>
+      </h1>
+      <p class="descricao">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+      </p>
+      <a href="#" class="btn-sobre">SOBRE NÓS</a>
+    </section>
+    <!--Serviços-->
+    <section class="cards-section">
+      <div class="cards-container">
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Imagem 1" />
+          <h3>Title 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2920/2920063.png" alt="Imagem 2" />
+          <h3>Title 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="Imagem 3" />
+          <h3>Title 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos</p>
+          <a href="#">Saiba Mais</a>
+        </div>
+      </div>
+      <div class="cta">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus mollitia quo</p>
+        <a href="#" class="btn-cta">ENTRE EM CONTATO</a>
+      </div>
+    </section>
+    <!--Clientes-->
+    <section class="clientes">
+      <div class="container-clientes">
+        <div class="clientes-text">
+          <p class="subtitulo">Nossos Clientes</p>
+          <h1>Lorem ipsum dolor sit<br><span>& consectetur adipis</span></h1>
+        </div>
+        <p class="descricao">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        </p>
+      </div>
+      <div class="clientes-imagens">
+        <div class="cliente-logo">
+          <a href="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-1.jpg">
+            <img src="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-thumb-1.jpg" alt="Imagem do cliente" /></a>
+        </div>
+        <div class="cliente-logo">
+          <a href="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-1.jpg">
+            <img src="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-thumb-1.jpg" alt="Imagem do cliente" /></a>
+        </div>
+        <div class="cliente-logo">
+          <a href="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-1.jpg">
+            <img src="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-thumb-1.jpg" alt="Imagem do cliente" /></a>
+        </div>
+        <div class="cliente-logo">
+          <a href="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-1.jpg">
+            <img src="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/palavra-chave-do-cliente/palavra-chave-do-cliente-thumb-1.jpg" alt="Imagem do cliente" /></a>
+        </div>
+    </section>
+    <!--Imagem Google Maps-->
+    <section class="mapa">
+      <div class="mapa-home">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9294837022344!2d-46.532667685545654!3d-23.463007963851407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5449d66cbeb%3A0x5fd15735782229d8!2sAv.%20Salgado%20Filho%2C%20252%20-%20Centro%2C%20Guarulhos%20-%20SP%2C%2007115-000!5e0!3m2!1spt-BR!2sbr!4v1653232729426!5m2!1spt-BR!2sbr"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-logo">
+      <a href="https://aprovacao.buscaorganica.com.br/base-one-page-tres/" title="Home - Empresa">
+        <span>
+          <picture>
+            <source type="image/jpg" srcset="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/logo-buscaorganica.jpg">
+            <img src="https://aprovacao.buscaorganica.com.br/base-one-page-tres/imagens/logo-buscaorganica.jpg" alt="Empresa" title="Empresa" class="img-responsive" />
+          </picture>
+        </span>
+      </a>
+      <address>
+        Rua seu endereço<br>
+        Cidade - CEP: 00000-000
+      </address>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Institucional</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Serviços</h3>
+      <ul>
+        <li><a href="#">Serviço 1</a></li>
+        <li><a href="#">Serviço 2</a></li>
+        <li><a href="#">Serviço 3</a></li>
+        <li><a href="#">Serviço 4</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-widget">
+      <h3>Facebook</h3>
+      <!-- Pode substituir esse iframe por outro conteúdo -->
+      <iframe src="https://www.facebook.com/plugins/page.php?href=..."></iframe>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Empresa - Slogan da empresa</p>
+    </div>
+
+  </footer>
 </body>
+
 </html>

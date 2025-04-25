@@ -17,7 +17,7 @@
 }
 
 .servicos-conteudo {
-  background-color: white;
+  background-color: var(--cor-fundo);
   width: 1200px;
   height: 1255px;
   display: grid;
@@ -32,7 +32,7 @@
 }
 
 .servicos-text {
-  background: #fff;
+  background: var(--cor-fundo);
   height: 300px;
   padding: 40px 30px;
   text-align: center;

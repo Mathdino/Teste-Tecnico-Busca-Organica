@@ -14,6 +14,9 @@
     <div class="logo">
       <a href="/"><img src="./img/logo.png" alt="Logo da Busca Orgânica"></a>
     </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      ☰
+    </button>
     <nav class="nav-menu">
       <ul>
         <li><a href="/index.html">Home</a></li>
@@ -24,12 +27,12 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
+    <section class="home">
+      <div class="home-content">
+        <div class="home-text">
           <p class="subtitle">NÓS SOMOS A</p>
           <h1><span>Sua</span>Empresa</h1>
-          <div class="hero-buttons">
+          <div class="home-buttons">
             <a href="#contato" class="btn-primary">SOLICITE UM ORÇAMENTO</a>
             <a href="#servicos" class="btn-secondary">Serviços</a>
           </div>
@@ -173,6 +176,20 @@
   <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const botaoContato = document.querySelector('.btn-contato');
+
+      menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+        botaoContato.classList.remove('btn-contato');
+
+      });
+    });
+  </script>
 </body>
 
 </html>

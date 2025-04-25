@@ -1,12 +1,12 @@
 .titulo-pagina {
-  background-color: #453074;
+  background-color: var(--cor-primaria);
   width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
 }
 .titulo-pagina h1 {
-  color: #fff;
+  color: var(--cor-fundo);
   text-transform: uppercase;
   font-size: 2rem;
   padding-top: 100px;
@@ -23,4 +23,95 @@
 .card-servicos-img img {
   width: 200px;
   height: 200px;
+}
+.cards-section-empresa {
+  padding: 0;
+  background-color: var(--cor-fundo);
+  margin-top: -400px;
+  margin-bottom: -200px;
+}
+
+.cards-container-empresa {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.card-empresa {
+  flex: 1;
+  text-align: center;
+  padding: 40px 30px;
+  background: var(--cor-fundo);
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-empresa::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: var(--cor-secundaria);
+  transition: width 0.3s ease;
+}
+
+.card-empresa:hover {
+  transform: translateY(-10px);
+}
+
+.card-empresa:hover::after {
+  width: 100%;
+}
+
+.card-image-empresa {
+  margin-bottom: 25px;
+}
+
+.card-image-empresa img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card-empresa:hover .card-image-empresa img {
+  transform: scale(1.05);
+}
+
+.card-empresa h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Responsive adjustments - Empresa Cards */
+@media (max-width: 992px) {
+  .cards-container-empresa {
+    flex-wrap: wrap;
+  }
+
+  .card-empresa {
+    flex: 0 0 calc(50% - 15px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container-empresa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-empresa {
+    width: 100%;
+    max-width: 350px;
+  }
 }

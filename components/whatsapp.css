@@ -6,7 +6,7 @@
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #fff;
+  color: var(--cor-fundo);
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -20,7 +20,7 @@
 }
 
 .whatsapp-float:hover {
-  color: #fff;
+  color: var(--cor-fundo);
   background-color: #128c7e;
   transform: scale(1.1);
   transition: all 0.3s ease;

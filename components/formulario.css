@@ -30,7 +30,7 @@
 
 .contact-form {
   flex: 1;
-  background: white;
+  background: var(--cor-fundo);
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -54,7 +54,7 @@
 
 .submit-btn {
   background-color: #6b21a8;
-  color: white;
+  color: var(--cor-fundo);
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
@@ -68,7 +68,7 @@
   background-color: #581c87;
 }
 .contact-info {
-  color: white;
+  color: var(--cor-fundo);
   padding: 2rem;
   flex-basis: 400px;
 }

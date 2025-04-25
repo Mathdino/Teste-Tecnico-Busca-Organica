@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 180px;
-  background-color: #fff;
+  background-color: var(--cor-fundo);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: #01d5c9;
+  background: var(--cor-secundaria);
   transition: 0.6s all ease;
 }
 
@@ -53,17 +53,17 @@
 
 .btn-contato,
 .btn-cta {
-  color: #fff !important;
+  color: var(--cor-fundo) !important;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15em;
   letter-spacing: 1.5px;
-  background-color: #453074;
+  background-color: var(--cor-primaria);
   border-style: solid;
   border-width: 1px;
-  border-color: #453074;
+  border-color: var(--cor-primaria);
   border-radius: 0;
-  box-shadow: 4px 4px 0 0 #ff4073;
+  box-shadow: 4px 4px 0 0 var(--cor-terciaria);
   padding: 22px 25px !important;
   transition: 0.6s all ease;
 }
@@ -71,38 +71,69 @@
 .btn-contato:hover {
   text-decoration: none;
   transition: 0.6s all ease;
-  background: #01d5c9;
+  background: var(--cor-secundaria);
   color: #313131;
   border: none;
 }
 
-@media (max-width: 768px) {
-  .header {
-    padding: 1rem;
-  }
-
-  .nav-menu ul {
-    gap: 1rem;
-  }
-
-  .logo img {
-    height: 40px;
-  }
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .header {
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--cor-fundo);
+    display: none;
     flex-direction: column;
+    align-items: flex-start;
     padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .nav-menu ul {
     flex-direction: column;
-    text-align: center;
+    width: 100%;
     gap: 0.5rem;
   }
 
-  main {
-    margin-top: 120px;
+  .nav-menu li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 1;
+    margin-left: -100px;
+  }
+
+  .menu-toggle {
+    flex: 1;
+    margin-left: 50px;
+    margin-right: -140px;
+    text-align: center;
   }
 }

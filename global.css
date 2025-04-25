@@ -9,6 +9,14 @@
 @import './components/header.css';
 @import './components/formulario.css';
 
+/* Importação das variáveis */
+:root {
+  --cor-primaria: #453074;
+  --cor-secundaria: #01d5c9;
+  --cor-terciaria: #ff4073;
+  --cor-fundo: #ffffff;
+}
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -20,7 +28,7 @@ body {
   margin: 0;
   position: relative;
   font-family: Poppins, sans-serif;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 html {
@@ -47,6 +55,7 @@ textarea {
 textarea {
   resize: vertical;
 }
+
 label {
   display: block;
   margin-bottom: 0.5rem;

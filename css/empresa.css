@@ -1,0 +1,26 @@
+.titulo-pagina {
+  background-color: #453074;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.titulo-pagina h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-top: 100px;
+  margin-left: 180px;
+}
+.empresa {
+  margin-top: -330px !important;
+  margin-left: 0;
+}
+.subtitulo-empresa {
+  margin-left: 0px !important;
+}
+
+.card-servicos-img img {
+  width: 200px;
+  height: 200px;
+}

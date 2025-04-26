@@ -7,10 +7,21 @@ Este projeto foi desenvolvido como parte do processo seletivo para a Busca Orgâ
 ## Estrutura do Projeto
 
 ```
-├── index.html              # Página principal
-├── ./global.css              # Estilos globais
+└── components/             # Diretório dos componentes
+    └── footer.css          # Estilos do footer
+    └── formulario.css      # Estilos do formulario
+    └── header.css          # Estilos do header
+    └── whatsapp.css        # Estilos do whatsapp
+└── css/                    # Diretório dos páginas
+    └── empresa.css         # Estilos do empresa
+    └── home.css            # Estilos do home
+    └── servico.css         # Estilos do servico
 └── img/                    # Diretório de imagens
-    └── logo.png            # Logo da empresa
+├── index.html              # Página principal
+├── empresa.html            # Página empresa
+├── servico.html            # Página servico
+├── contato.html            # Página contato
+├── ./global.css              # Estilos globais
 ```
 
 ## Tecnologias Utilizadas
@@ -49,52 +60,19 @@ Este projeto foi desenvolvido como parte do processo seletivo para a Busca Orgâ
    - Variáveis CSS para consistência
    - Comentários explicativos
 
-## Melhorias Implementadas
-
-1. **Organização do CSS**
-
-   - Sistema de variáveis para cores e medidas
-   - Separação em componentes e páginas
-   - Reutilização de estilos comuns
-
-2. **Estrutura HTML**
-
-   - Tags semânticas apropriadas
-   - Hierarquia de cabeçalhos correta
-   - Atributos ARIA quando necessário
-
-3. **Responsividade**
-
-   - Media queries otimizadas
-   - Layout fluido
-   - Imagens responsivas
-
-4. **Performance**
-   - Otimização de imagens
-   - CSS minificado
-   - Carregamento otimizado de recursos
-
 ## Instruções de Desenvolvimento
 
 1. Clone o repositório
-2. Instale as dependências (se houver)
 3. Execute um servidor local
 4. Faça as alterações necessárias
 5. Teste em diferentes dispositivos e navegadores
 
 ## Considerações Finais
 
-- O projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento web
+- Agradeço a Busca Orgânica por dar esta oportunidade de refazer esta página como meio de teste, o projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento web com:
 - Foco em código limpo e organizado
 - Performance otimizada
 - Acessibilidade implementada
 - Design responsivo
 - Fácil manutenção e escalabilidade
 
-## Próximos Passos
-
-1. Implementar JavaScript para interatividade
-2. Adicionar mais animações e transições
-3. Otimizar ainda mais o desempenho
-4. Implementar testes automatizados
-5. Adicionar documentação mais detalhada

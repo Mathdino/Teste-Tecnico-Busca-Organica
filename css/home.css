@@ -352,7 +352,6 @@
   justify-content: center;
   margin-top: 100px;
   height: 200px;
-  background-color: #fbfbfb;
 }
 .clientes-text {
   margin-left: 180px;
@@ -367,6 +366,7 @@
   margin-top: -50px;
   margin-left: 150px;
 }
+
 .container-clientes .descricao {
   flex-wrap: wrap;
   max-width: 550px;
@@ -411,6 +411,9 @@
   .home-text .subtitle {
     font-size: 1.2rem;
   }
+  .btn-primary{
+    color:#222 !important;
+  }
   .home-buttons {
     flex-direction: column;
     align-items: center;
@@ -430,6 +433,11 @@
   .cards-section {
     margin-top: -200px;
   }
+  .btn-cta{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
   /*Clientes*/
   .clientes {
     text-align: center;
@@ -448,12 +456,16 @@
   }
   .clientes-text {
     margin-left: 0;
+    margin-top: 300px;
     margin-bottom: 1rem;
+  }
+  .clientes-text .subtitulo{
+    margin-left: auto;
   }
 
   .clientes-text h1 {
     font-size: 1.8rem;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .descricao {
     max-width: 600px;
@@ -469,10 +481,15 @@
     gap: 1rem;
     width: 100%;
   }
+  .text-home{
+  margin-top: 240px !important;
+  margin-left: -20px !important;
+}
 
   .cliente-logo {
     flex: 0 0 auto;
-    max-width: 120px;
+    max-width: 80px;
+    margin-top: 100px;
   }
 
   .cliente-logo img {
@@ -481,6 +498,10 @@
     display: block;
   }
   /*Mapa*/
+  .mapa{
+    margin-top: -100px;
+    margin-bottom: -600px;
+  }
   .mapa-home iframe {
     height: 400px;
   }

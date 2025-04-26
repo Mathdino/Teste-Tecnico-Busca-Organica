@@ -16,6 +16,9 @@
     <div class="logo">
       <a href="/"><img src="./img/logo.png" alt="Logo da Busca Orgânica"></a>
     </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      ☰
+    </button>
     <nav class="nav-menu">
       <ul>
         <li><a href="/index.html">Home</a></li>
@@ -48,7 +51,6 @@
 
     <section class="container-servicos">
       <div class="servicos">
-
         <div class="servicos-conteudo">
           <div class="servicos-img">
             <img src="./img/servico-img.webp" alt="Imagem de um cerebro animado">
@@ -58,7 +60,6 @@
             <h2>Title 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut massa nec lorem condimentum scelerisque.</p>
           </div>
-
           <div class="servicos-text">
             <img src="./img/computador.png" alt="Ícone Megafone" class="icon">
             <h2>Title 2</h2>
@@ -67,7 +68,6 @@
           <div class="servicos-img">
             <img src="./img/servico-img.webp" alt="Imagem de um cerebro animado">
           </div>
-
           <div class="servicos-img">
             <img src="./img/servico-img.webp" alt="Imagem de um cerebro animado">
           </div>
@@ -192,6 +192,19 @@
   <a href="https://wa.me/5500000000000" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const botaoContato = document.querySelector('.btn-contato');
+
+      menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+        botaoContato.classList.remove('btn-contato');
+
+      });
+    });
+  </script>
 </body>
 
 </html>
